@@ -1,0 +1,2 @@
+from setuptools import setup
+setup(name='drishtinav_safety',version='0.1.0',packages=['drishtinav_safety'],data_files=[('share/ament_index/resource_index/packages',['resource/drishtinav_safety']),('share/drishtinav_safety',['package.xml'])],install_requires=['setuptools'],zip_safe=True,maintainer='ROVERA',maintainer_email='operator@example.invalid',description='Independent fail-closed safety gate',license='Apache-2.0',entry_points={'console_scripts':['safety_gate = drishtinav_safety.node:main']})

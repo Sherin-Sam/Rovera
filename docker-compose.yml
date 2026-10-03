@@ -1,0 +1,16 @@
+services:
+  console:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      APP_MODE: SIMULATION
+      DATABASE_PATH: /app/data/drishtinav.db
+      AUTH_TOKEN: ${AUTH_TOKEN:?Set AUTH_TOKEN in .env before starting Docker}
+      ENABLE_REMOTE_CONTROL: "true"
+      FRONTEND_ORIGINS: http://127.0.0.1:8000,http://localhost:8000
+    volumes:
+      - mission-data:/app/data
+    restart: unless-stopped
+volumes:
+  mission-data:

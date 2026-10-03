@@ -1,0 +1,6 @@
+# Replace with measured calibration; no guessed intrinsics are provided.
+camera_source: null
+calibration_file: null
+frame_id: camera_optical_frame
+inference_width: 640
+latest_frame_queue_size: 1

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+.test-tmp/
+*.tsbuildinfo
+.env
+data/*.db*
+data/missions/*
+!data/missions/.gitkeep
+*.log
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/

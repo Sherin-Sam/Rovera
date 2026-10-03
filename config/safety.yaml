@@ -1,0 +1,8 @@
+# Physical integration reference only. The simulator uses persisted API settings.
+camera_timeout_ms: 300
+command_timeout_ms: 200
+green_threshold: 0.75
+red_threshold: 0.50
+startup_inhibited: true
+estop_latched: true
+motor_controller_watchdog_required: true
